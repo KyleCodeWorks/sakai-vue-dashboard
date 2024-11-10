@@ -23,18 +23,39 @@ const dropdownValue = ref(null);
         </div>
         <p>Use this page to start from scratch and place your custom content.</p>
     </div> -->
+
+
     <div class="grid grid-cols-12 gap-8">
-        <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0"></div>
+        <!-- 1st row -->
+        <div class="col-span-12 xl:col-span-12">
+            <div class="card mb-0 h-40">
+
+            </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0"></div>
+
+        <!-- 2nd rows -->
+        <div class="col-span-12 xl:col-span-4 lg:col-span-6">
+            <div class="card mb-0 h-32"></div>
         </div>
-        <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0"></div>
+        <div class="col-span-12 xl:col-span-4 lg:col-span-6">
+            <div class="card mb-0 h-32"></div>
         </div>
-        <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0"></div>
+        <div class="col-span-12 xl:col-span-4 lg:col-span-6">
+            <div class="card mb-0 h-32"></div>
         </div>
+        
+        <!-- 3rd rows -->
+        <div class="col-span-12 xl:col-span-6">
+            <div class="card mb-0 h-80"></div>
+        </div>
+
+        <div class="col-span-12 xl:col-span-6">
+            <div class="card mb-0 h-80"></div>
+        </div>
+
+        <!-- 4th rows -->
+        <div class="col-span-12">
+            <div class="card mb-0 h-96"></div>
+        </div> 
     </div>
 </template>
