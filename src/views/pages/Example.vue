@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const dropdownValues = ref([
     { name: 'New York', code: 'NY' },
@@ -9,6 +9,12 @@ const dropdownValues = ref([
     { name: 'Paris', code: 'PRS' }
 ]);
 const dropdownValue = ref(null);
+
+const message = ref('Hello, this is your initial message!'); // Add an initial value
+const test = ref(''); // Define `test` for v-model
+watch(test, (newValue) => {
+    message.value = `Hello, ${newValue}!`;
+});
 </script>
 <template>
     <!-- <div class="card">
@@ -26,7 +32,6 @@ const dropdownValue = ref(null);
 
     <div class="grid grid-cols-12 gap-4">
         <!-- 1st row -->
-
         <div class="col-span-12 md:col-span-4 xl:col-span-4">
             <InputGroup>
                 <InputGroupAddon> Year </InputGroupAddon>
